@@ -1,11 +1,16 @@
+
+//"https://cdn.skypack.dev/solid-js";
+//import { render } from "https://cdn.skypack.dev/solid-js/web";
+//import html from "https://cdn.skypack.dev/solid-js/html";
+//import h from "https://cdn.skypack.dev/solid-js/h";
+
 import {
   createSignal,
   onCleanup,
   createMemo,
-} from "https://cdn.skypack.dev/solid-js";
-//import { render } from "https://cdn.skypack.dev/solid-js/web";
-//import html from "https://cdn.skypack.dev/solid-js/html";
-import h from "https://cdn.skypack.dev/solid-js/h";
+} from "solid-js";
+
+import h from "solid-js/h";
 
 import SignIn from "/components/auth/login.js";
 import SignUp from "/components/auth/signup.js";
@@ -38,12 +43,8 @@ const App = () => {
 
   return h("div", {}, renderView);
 
-
-  //return html`<div>${count}</div>`;
-  // or
-  //return h("div", {}, count, Login());
 };
-//render(App, document.body);
+
 export default App;
 
 //const App = () => {

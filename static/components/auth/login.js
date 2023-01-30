@@ -2,8 +2,8 @@
 import {
   createSignal,
   onCleanup,
-} from "https://cdn.skypack.dev/solid-js";
-import h from "https://cdn.skypack.dev/solid-js/h";
+} from "solid-js";
+import h from "solid-js/h";
 
 function Login(props){
 

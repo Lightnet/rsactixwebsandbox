@@ -2,6 +2,17 @@
 <html>
 <head>
   <title> Blank Website</title>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "solid-js": "https://cdn.skypack.dev/solid-js",
+        "solid-js/web": "https://cdn.skypack.dev/solid-js/web",
+        "solid-js/html": "https://cdn.skypack.dev/solid-js/html",
+        "solid-js/h": "https://cdn.skypack.dev/solid-js/h"
+      }
+    }
+  </script>
   <script type="module" src="/client.js"></script>
 </head>
 <body>

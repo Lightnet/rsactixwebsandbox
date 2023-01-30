@@ -43,7 +43,7 @@ struct ToDoListEntry{
   //"This is a health check".to_string()
 //}
 
-#[get("/")]
+#[get("/")]// index page, entry point
 async fn index() -> impl Responder {
   //HttpResponse::Ok().body("index")
   NamedFile::open_async("./static/index.html").await.unwrap()
@@ -87,6 +87,7 @@ async fn main() -> std::io::Result<()> {
     App::new()
       // enable logger
       .wrap(middleware::Logger::default())
+      .wrap(middleware::Compress::default())
       .app_data(app_data.clone())
       .service(index)
       .service(echo)

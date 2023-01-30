@@ -1,8 +1,10 @@
 console.log("init client...");
 
-import { render } from "https://cdn.skypack.dev/solid-js/web";
+//import { render } from "https://cdn.skypack.dev/solid-js/web";
 //import html from "https://cdn.skypack.dev/solid-js/html";
 //import h from "https://cdn.skypack.dev/solid-js/h";
+
+import { render } from "solid-js/web";
 
 import App from "./components/app.js";
 render(App, document.body);
